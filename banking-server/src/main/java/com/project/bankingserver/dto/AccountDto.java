@@ -3,20 +3,15 @@ package com.project.bankingserver.dto;
 
 import com.project.bankingserver.dto.UserDto;
 import com.project.bankingserver.models.Account;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
+import lombok.experimental.SuperBuilder;
 
-/**
- * @author Ali Bouali
- * @since 15.09.22
- */
+
 
 @Getter
 @Setter
 @AllArgsConstructor
-@Builder
+@SuperBuilder
 public class AccountDto {
 
   private Integer id;
@@ -25,13 +20,12 @@ public class AccountDto {
 
   private UserDto user;
 
-  public static AccountDto fromEntity(Account account) {
+  /*public static AccountDto fromEntity(Account account) {
     return AccountDto.builder()
         .id(account.getId())
         .iban(account.getIban())
         .user(UserDto.fromEntity(account.getUser()))
         .build();
-
   }
 
   public static Account toEntity(AccountDto account) {
@@ -41,5 +35,5 @@ public class AccountDto {
         .user(UserDto.toEntity(account.getUser()))
         .build();
 
-  }
+  }*/
 }

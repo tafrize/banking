@@ -8,11 +8,6 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
-/**
- * @author Ali Bouali
- * @since 15.09.22
- */
-
 @Getter
 @Setter
 @AllArgsConstructor
@@ -31,7 +26,7 @@ public class ContactDto {
 
   private Integer userId;
 
-  public static ContactDto fromEntity(Contact contact) {
+  /*public static ContactDto fromEntity(Contact contact) {
     return ContactDto.builder()
         .id(contact.getId())
         .firstname(contact.getFirstname())
@@ -56,6 +51,6 @@ public class ContactDto {
                 .build()
         )
         .build();
-  }
+  }*/
 
 }

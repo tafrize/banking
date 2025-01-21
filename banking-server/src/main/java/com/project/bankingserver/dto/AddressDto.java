@@ -2,15 +2,13 @@ package com.project.bankingserver.dto;
 
 import com.project.bankingserver.models.Address;
 import com.project.bankingserver.models.User;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
+import lombok.*;
 
 @Getter
 @Setter
 @AllArgsConstructor
 @Builder
+@Data
 public class AddressDto {
 
 
@@ -28,7 +26,7 @@ public class AddressDto {
 
   private Integer userId;
 
-  public static AddressDto fromEntity(Address address) {
+  /*public static AddressDto fromEntity(Address address) {
     return AddressDto.builder()
         .id(address.getId())
         .street(address.getStreet())
@@ -54,5 +52,5 @@ public class AddressDto {
                 .build()
         )
         .build();
-  }
+  }*/
 }
