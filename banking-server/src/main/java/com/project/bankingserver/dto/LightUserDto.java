@@ -30,7 +30,7 @@ public class LightUserDto {
   @NotBlank(message = "Le nom ne doit pas etre vide")*/
   private String lastname;
 
-  /*public static LightUserDto fromEntity(User user) {
+  public static LightUserDto fromEntity(User user) {
     // null check
     return LightUserDto.builder()
         .id(user.getId())
@@ -46,6 +46,6 @@ public class LightUserDto {
         .firstname(user.getFirstname())
         .lastname(user.getLastname())
         .build();
-  }*/
+  }
 
 }

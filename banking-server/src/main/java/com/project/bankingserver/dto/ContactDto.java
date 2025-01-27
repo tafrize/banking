@@ -26,7 +26,7 @@ public class ContactDto {
 
   private Integer userId;
 
-  /*public static ContactDto fromEntity(Contact contact) {
+  public static ContactDto fromEntity(Contact contact) {
     return ContactDto.builder()
         .id(contact.getId())
         .firstname(contact.getFirstname())
@@ -51,6 +51,6 @@ public class ContactDto {
                 .build()
         )
         .build();
-  }*/
+  }
 
 }

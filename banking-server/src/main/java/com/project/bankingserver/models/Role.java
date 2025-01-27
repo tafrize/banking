@@ -19,4 +19,20 @@ public class Role extends AbstractEntity{
     @OneToOne
     @JoinColumn(name="id_user")
     private User user;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 }

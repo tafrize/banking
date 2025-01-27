@@ -28,4 +28,35 @@ public class Transaction extends AbstractEntity {
     @JoinColumn(name="id_user")
     private User user;
 
+    public BigDecimal getAmount() {
+        return amount;
+    }
+
+    public void setAmount(BigDecimal amount) {
+        this.amount = amount;
+    }
+
+    public TransactionType getType() {
+        return type;
+    }
+
+    public void setType(TransactionType type) {
+        this.type = type;
+    }
+
+    public String getDestinationIban() {
+        return destinationIban;
+    }
+
+    public void setDestinationIban(String destinationIban) {
+        this.destinationIban = destinationIban;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
 }

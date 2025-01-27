@@ -4,6 +4,10 @@ package com.project.bankingserver.dto;
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
+import com.project.bankingserver.models.Transaction;
+import com.project.bankingserver.models.TransactionType;
+import com.project.bankingserver.models.User;
+import jakarta.validation.constraints.Positive;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -18,7 +22,7 @@ public class TransactionDto {
 
   private Integer id;
 
- /* @Positive
+  @Positive
   private BigDecimal amount;
 
   private TransactionType type;
@@ -34,7 +38,7 @@ public class TransactionDto {
         .id(transaction.getId())
         .amount(transaction.getAmount())
         .type(transaction.getType())
-        .transactionDate(transaction.getTransactionDate())
+        //.transactionDate(transaction.getTransactionDate())
         .destinationIban(transaction.getDestinationIban())
         .userId(transaction.getUser().getId())
         .build();
@@ -45,7 +49,7 @@ public class TransactionDto {
         .id(transaction.getId())
         .amount(transaction.getAmount())
         .type(transaction.getType())
-        .transactionDate(LocalDate.now())
+        //.transactionDate(LocalDate.now())
         .destinationIban(transaction.getDestinationIban())
         .user(
             User.builder()
@@ -53,6 +57,6 @@ public class TransactionDto {
                 .build()
             )
         .build();
-  }*/
+  }
 
 }

@@ -20,7 +20,7 @@ public class AccountDto {
 
   private UserDto user;
 
-  /*public static AccountDto fromEntity(Account account) {
+  public static AccountDto fromEntity(Account account) {
     return AccountDto.builder()
         .id(account.getId())
         .iban(account.getIban())
@@ -35,5 +35,5 @@ public class AccountDto {
         .user(UserDto.toEntity(account.getUser()))
         .build();
 
-  }*/
+  }
 }
